@@ -106,7 +106,7 @@ router.patch('/users/me', auth, async (req, res) => {
 
         res.send(req.user)
     } catch (e) {
-        res.status(500).send(e)
+        res.status(400).send(e)
     }
 })
 
